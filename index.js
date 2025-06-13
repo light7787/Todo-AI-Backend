@@ -11,7 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: '*', // Allows requests from any origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+   credentials: true 
 
 }));
 
