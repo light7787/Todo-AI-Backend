@@ -11,8 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: '*', // Allows requests from any origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+
 }));
 
 const supabaseUrl =  process.env.REACT_APP_SUPABASE_URL;
