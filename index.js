@@ -10,7 +10,9 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173', // Change this to your frontend URL or use '*' to allow all
+  origin: '*', // Allows requests from any origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 const supabaseUrl =  process.env.REACT_APP_SUPABASE_URL;
