@@ -104,6 +104,8 @@ app.get('/todos', GetTodos);
 app.put('/todos/:id', UpdateTodo);
 app.delete('/todos/:id', DeleteTodo);
 app.post('/ai', handleAiPrompt);
+export default app;
+
 
 const PORT = process.env.PORT || 3000;
 
